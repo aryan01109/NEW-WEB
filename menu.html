@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydrogen Credits Prototype</title>
+  <link rel="stylesheet" href="b.css">
+  
+</head>
+<body>
+  <header>
+    <h1>Hydrogen Credits</h1>
+    <button class="menu-toggle">☰</button>
+    <nav id="navbar">
+      <a href="#" onclick="showSection('login')">Login</a>
+      <a href="#" onclick="showSection('issue')">Issue</a>
+      <a href="#" onclick="showSection('transfer')">Transfer</a>
+      <a href="#" onclick="showSection('retire')">Retire</a>
+      <a href="#" onclick="showSection('verify')">Verify</a>
+    </nav>
+  </header>
+
+  <div id="login" class="section active">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username"><br><br>
+    <input type="password" placeholder="Password"><br>
+    <button>Login</button>
+  </div>
+
+  <div id="issue" class="section">
+    <h2>Issue Credits</h2>
+    <input type="number" placeholder="Amount"><br>
+    <button>Issue</button>
+  </div>
+
+  <div id="transfer" class="section">
+    <h2>Transfer Credits</h2>
+    <input type="text" placeholder="Recipient"><br>
+    <input type="number" placeholder="Amount"><br>
+    <button>Transfer</button>
+  </div>
+
+  <div id="retire" class="section">
+    <h2>Retire Credits</h2>
+    <input type="number" placeholder="Amount"><br>
+    <button>Retire</button>
+  </div>
+
+  <div id="verify" class="section">
+    <h2>Verify Credits</h2>
+    <input type="text" placeholder="Credit ID"><br>
+    <button>Verify</button>
+  </div>
+
+  <script src="c.js"></script>
+  <script src="node.js"></script>
+</body>
+</html>
